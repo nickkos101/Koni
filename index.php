@@ -1,56 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Koni TV</title>
-        <link rel="stylesheet" href="normalize.css" type="text/css" />
-        <link rel="stylesheet" href="style.css" type="text/css" />
-    </head>
-    <body>
-        <div class="header">
-            <div class="container">
-                <div class="logo">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-                <div class="navigation">
-                    <ul>
-                        <li>Videos</li>
-                        <li>About Koni</li>
-                        <li>Partners</li>
-                        <li>Join KoniTV</li>
-                        <li>Events</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="container">
+<?php include 'header.php'; ?>
+        <div class="container">
+            <div class="content">
                 <div class="slider">
                     <div class="slide">
                         <img src="images/sliderimage.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="images/sliderimage2.jpg">
                     </div>
                 </div>
                 <div class="featured-video-module">
                     <h2>Featured Videos</h2>
                     <div class="featured-video">
-                        <iframe width="480" height="300" src="//www.youtube.com/embed/Dd7FixvoKBw?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="460" height="300" src="//www.youtube.com/embed/Dd7FixvoKBw?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <ul class="related-videos">
-                        <li class="top"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><iframe width="230" height="145" src="//www.youtube.com/embed/lfflhfn1W-o" frameborder="0" allowfullscreen></iframe></li>
+                        <li><iframe width="230" height="145" src="//www.youtube.com/embed/4fRPC4xVLps" frameborder="0" allowfullscreen></iframe></li>
+                        <li><iframe width="230" height="145" src="//www.youtube.com/embed/foMQX9ZExsE" frameborder="0" allowfullscreen></iframe></li>
+                        <li><iframe width="230" height="145" src="//www.youtube.com/embed/AjfOm_W-UaY" frameborder="0" allowfullscreen></iframe></li>
+                    </ul>
+                </div>
+                <div class="content-module">
+                    <h2>Why Join KoniTV</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec enim magna. Nunc vehicula, mauris vitae tempus sollicitudin, diam enim rhoncus ante, ut gravida felis massa non diam. In quis viverra sapien, eu tempor velit. Mauris gravida sapien ut consectetur hendrerit. Mauris nec quam viverra, imperdiet magna at, imperdiet leo. Sed luctus urna molestie metus accumsan luctus. Vestibulum sed libero ac nisi tincidunt mattis tempus tempus quam. Nulla sed diam felis. Praesent commodo libero a aliquet blandit. In id est eu ipsum vulputate pretium. In aliquet mollis tortor.</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="partners-module">
+                    <h2>Featured Partners</h2>
+                    <ul>
+                        <li><img src="images/bet.jpg"></li>
+                        <li><img src="images/bio.jpg"></li>
+                        <li><img src="images/fox.jpg"></li>
+                        <li><img src="images/history.jpg"></li>
                     </ul>
                 </div>
                 <div class="channel-module">
-                    
+                    <h2>Featured Channels</h2>
+                    <ul>
+                        <li><img src="images/merica.jpg"></li>
+                        <li><img src="images/batman.png"></li>
+                        <li><img src="images/callofduty.png"></li>
+                        <li><img src="images/destiny.png"></li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-    </body>
-</html>
+<?php include 'footer.php'; ?>
