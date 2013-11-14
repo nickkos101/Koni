@@ -12,15 +12,15 @@
         </div>
         <div class="main-video">
             <iframe width="665" height="450" src="//www.youtube.com/embed/C4JfTmhwTJw" frameborder="0" allowfullscreen></iframe>
-            <div class="featured-video-sidebar">
-                <h3>Related Videos</h3>
-                <ul>
-                    <li><iframe width="230" height="140" src="//www.youtube.com/embed/lfflhfn1W-o" frameborder="0" allowfullscreen></iframe></li>
-                    <li><iframe width="230" height="140" src="//www.youtube.com/embed/4fRPC4xVLps" frameborder="0" allowfullscreen></iframe></li>
-                    <li><iframe width="230" height="140" src="//www.youtube.com/embed/foMQX9ZExsE" frameborder="0" allowfullscreen></iframe></li>
-                    <li><iframe width="230" height="140" src="//www.youtube.com/embed/foMQX9ZExsE" frameborder="0" allowfullscreen></iframe></li>
-                </ul>
-            </div>
+        </div>
+        <div class="featured-video-sidebar">
+            <h3>Related Videos</h3>
+            <ul>
+                <li><iframe width="230" height="140" src="//www.youtube.com/embed/lfflhfn1W-o" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe width="230" height="140" src="//www.youtube.com/embed/4fRPC4xVLps" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe width="230" height="140" src="//www.youtube.com/embed/foMQX9ZExsE" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe width="230" height="140" src="//www.youtube.com/embed/foMQX9ZExsE" frameborder="0" allowfullscreen></iframe></li>
+            </ul>
         </div>
         <div class="channel-module">
             <h2>Featured Channels</h2>
