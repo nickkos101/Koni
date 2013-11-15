@@ -5,6 +5,7 @@
         <title>Koni TV</title>
         <link rel="stylesheet" href="normalize.css" type="text/css" />
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="function.js"></script>
     </head>
@@ -26,8 +27,6 @@
                     </ul>
                     <p class="metainfo">Info@KoniTV.tv - <span>619-804-3137</span></p>
                 </div>
-            </div>
-            <div class="white-wrap">
                 <div class="nav">
                     <ul>
                         <li>Home</li>
@@ -44,3 +43,6 @@
                         <li>Contact</li>
                     </ul>
                 </div>
+            </div>
+            <div class="white-wrap">
+                
