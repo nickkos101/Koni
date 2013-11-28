@@ -33,7 +33,7 @@ function autoc_get_img($id) {
 function autoc_get_postdata($id) {
 	global $wpdb;
 	$postdata = get_post_meta( get_the_ID(), $id, false );
-	echo $postdata;
+	echo $postdata[0];
 }
 
 

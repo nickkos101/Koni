@@ -10,7 +10,6 @@ register_nav_menus( array(
 	'Header_Nav' => 'Header Navigation Area',
 	) );
 
-
 //Sidebar Registration
 register_sidebar( array(
 	'name' => __( 'Blog Sidebar', 'wpb' ),
@@ -20,8 +19,8 @@ register_sidebar( array(
 	'after_widget' => '</aside>',
 	'before_title' => '<h3 class="widget-title">',
 	'after_title' => '</h3><div class="widget-content">',
-	) );
-
+	) 
+);
 
 //Post Type Creation
 
@@ -44,9 +43,11 @@ function koni_create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'rewrite' => array('slug' => 'partners'),
+		'supports' => array('title'),
 		)
 	);
 }
+
 add_action('init', 'koni_create_post_type');
 
 ?>

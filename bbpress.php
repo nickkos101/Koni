@@ -6,6 +6,6 @@
 		<?php the_content(); ?>
 	</div>
 <?php endwhile; endif; ?>
-	<?php include 'sidebar.php'; ?>
+<?php include 'sidebar.php'; ?>
 </div>
 <?php get_footer(); ?>

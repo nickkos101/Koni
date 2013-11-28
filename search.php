@@ -1,6 +1,11 @@
 <?php get_header(); ?>
+<?php
+global $wp_query;
+$total_results = $wp_query->found_posts;
+?>
 <div class="content-wrap blog">
 	<div class="blog-wrap">
+		<p>You Searched for <?php the_search_query(); ?>, we found <?php echo $total_results; ?> result(s).</p>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="blog-post">
 			<h2><?php the_title(); ?></h2>
@@ -23,8 +28,8 @@
 				</div>
 			</div>
 		</div>
-		    <?php endwhile; endif; ?>
-	</div>
-	<?php include 'sidebar.php'; ?>
+	<?php endwhile; endif; ?>
+</div>
+<?php include 'sidebar.php'; ?>
 </div>
 <?php get_footer(); ?>

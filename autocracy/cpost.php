@@ -1,94 +1,50 @@
 <?php
 
-/**
- * Registering meta boxes
- *
- * All the definitions of meta boxes are listed below with comments.
- * Please read them CAREFULLY.
- *
- * You also should read the changelog to know what has been changed before updating.
- *
- */
-/* * ******************* META BOX DEFINITIONS ********************** */
-
-/**
- * Prefix of meta keys (optional)
- * Use underscore (_) at the beginning to make keys hidden
- * Alt.: You also can make prefix empty to disable it
- */
-// Better has an underscore as last sign
 $prefix = 'YOUR_PREFIX_';
-
 global $meta_boxes;
-
 $meta_boxes = array();
 
 $meta_boxes[] = array(
-    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
-    'id' => 'process',
-    // Meta box title - Will appear at the drag and drop handle bar. Required.
-    'title' => 'Process',
-    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array('process'),
-    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'id' => 'partner',
+    'title' => 'Partner Info',
+    'pages' => array('partners'),
     'context' => 'normal',
-    // Order of meta box: high (default), low. Optional.
     'priority' => 'high',
-    // List of meta fields
     'fields' => array(
      array(
-        'name' => 'Stage',
-        'id' => 'stage',
-        'type' => 'text',
+        'name'             => 'Partner Image',
+        'id'               => "partnerimage",
+        'type'             => 'plupload_image',
+        'max_file_uploads' => 1,
         ),
      array(
-        'name' => 'Stage without span',
-        'id' => 'stages',
+        'name' => 'Video ID',
+        'id' => 'videolink',
         'type' => 'text',
         ),
-     array(
-            'name'             => 'Process Image',
-            'id'               => "processimage",
-            'type'             => 'plupload_image',
-            'max_file_uploads' => 1,
-            ),
      ),
     );
 
 $meta_boxes[] = array(
-    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
-    'id' => 'products',
-    // Meta box title - Will appear at the drag and drop handle bar. Required.
-    'title' => 'Products',
-    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array('products'),
-    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'id' => 'channel',
+    'title' => 'Channel Info',
+    'pages' => array('channels'),
     'context' => 'normal',
-    // Order of meta box: high (default), low. Optional.
     'priority' => 'high',
-    // List of meta fields
     'fields' => array(
-      array(
-        'name' => 'Top Text',
-        'desc' => "",
-        'id' => "products_toptext",
-        'type' => 'wysiwyg',
-        'std' => "",
-        'cols' => '20',
-        'rows' => '8',
+     array(
+        'name'             => 'Channel Image',
+        'id'               => "channelimage",
+        'type'             => 'plupload_image',
+        'max_file_uploads' => 1,
         ),
-      array(
-        'name' => 'Second Text',
-        'desc' => "",
-        'id' => "products_secondtext",
-        'type' => 'wysiwyg',
-        'std' => "",
-        'cols' => '20',
-        'rows' => '8',
+     array(
+        'name' => 'Video ID',
+        'id' => 'videolink',
+        'type' => 'text',
         ),
-      ),
+     ),
     );
-
 
 /* * ******************* META BOX REGISTERING ********************** */
 

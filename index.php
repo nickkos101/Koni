@@ -1,7 +1,7 @@
-<?php include 'header.php'; ?>
+<?php get_header(); ?>
 <div class="featured-banner-module">
     <div class="banner">
-        <img src="images/content-images/banner.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/content-images/banner.jpg">
     </div>
 </div>
 
@@ -11,35 +11,35 @@
         <h3>Featured Videos / LiveTV</h3>
         <ul>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
             <li>
-                <img src="images/logo.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
                 <p>Koni Tv Insider</p>
             </li>
         </ul>
@@ -52,38 +52,38 @@
     <div class="sponsors-module">
         <h3>Proud Sponsors</h4>
             <ul>
-                <li><img src="images/content-images/sponsor-image.jpg"></li>
-                <li><img src="images/content-images/sponsor-image.jpg"></li>
-                <li><img src="images/content-images/sponsor-image.jpg"></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
             </ul>
+        </div>
+
+        <div class="channels-module">
+            <h4>KoniTV Channels</h4>
+            <ul>
+                <li>
+                    <img>
+                    <p>Designers & Architects</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Designers & Architects</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Designers & Architects</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Designers & Architects</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Designers & Architects</p>
+                </li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="channels-module">
-        <h4>KoniTV Channels</h4>
-        <ul>
-            <li>
-                <img>
-                <p>Designers & Architects</p>
-            </li>
-            <li>
-                <img>
-                <p>Designers & Architects</p>
-            </li>
-            <li>
-                <img>
-                <p>Designers & Architects</p>
-            </li>
-            <li>
-                <img>
-                <p>Designers & Architects</p>
-            </li>
-            <li>
-                <img>
-                <p>Designers & Architects</p>
-            </li>
-        </ul>
-    </div>
-
-</div>
-
-<?php include 'footer.php'; ?>
+    <?php get_footer(); ?>
