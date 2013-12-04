@@ -52,28 +52,32 @@
     <div class="sponsors-module">
         <h3>Proud Sponsors</h4>
             <ul>
-                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
-                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
-                <li><img src="<?php echo get_template_directory_uri(); ?>/images/content-images/sponsor-image.jpg"></li>
-            </ul>
-        </div>
-
-        <div class="channels-module">
-            <h4>KoniTV Channels</h4>
-            <ul>
                 <?php
                 $sliderPosts = new WP_Query();
-                $sliderPosts->query(array('post_type' => 'partners'));
+                $sliderPosts->query(array('post_type' => 'partners', 'posts_per_page' => 3));
                 while ($sliderPosts->have_posts()) : $sliderPosts->the_post();
                 ?>
-                <li>
-                    <?php autoc_get_img('partnerimage') ?>
-                    <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                </li>
+                <li><?php autoc_get_img('partnerimage') ?></li>
             <?php endwhile; ?>
         </ul>
     </div>
 
-    </div>
+    <div class="channels-module">
+        <h4>KoniTV Channels</h4>
+        <ul>
+            <?php
+            $sliderPosts = new WP_Query();
+            $sliderPosts->query(array('post_type' => 'channels'));
+            while ($sliderPosts->have_posts()) : $sliderPosts->the_post();
+            ?>
+            <li>
+                <?php autoc_get_img('channelimage') ?>
+                <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+            </li>
+        <?php endwhile; ?>
+    </ul>
+</div>
 
-    <?php get_footer(); ?>
+</div>
+
+<?php get_footer(); ?>

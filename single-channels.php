@@ -8,7 +8,7 @@
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <h2><?php the_title(); ?></h2>
     <div class="channel-video">
-        <iframe width="100%" height="315" src="//www.youtube.com/embed/YYchaxR_QXE" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="//www.youtube.com/embed/<?php autoc_get_postdata('videolink'); ?>" frameborder="0" allowfullscreen></iframe>
     </div>
 <?php endwhile; endif; ?>
 <div class="channels-module">

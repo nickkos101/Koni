@@ -5,7 +5,6 @@
 		<div class="blog-post">
 			<h2><?php the_title(); ?></h2>
 			<div class="blog-post-wrap">
-				<iframe width="100%" height="315" src="//www.youtube.com/embed/YYchaxR_QXE" frameborder="0" allowfullscreen></iframe>
 				<?php the_content(); ?>
 				<div class="meta-bar">
 					<p class="share-this">Share This:</p>

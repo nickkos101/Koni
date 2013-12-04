@@ -6,11 +6,14 @@ Template Name: Blog Page
 <?php get_header(); ?>
 <div class="content-wrap blog">
 	<div class="blog-wrap">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php
+		$sliderPosts = new WP_Query();
+		$sliderPosts->query(array('post_type' => 'post'));
+		while ($sliderPosts->have_posts()) : $sliderPosts->the_post();
+		?>
 		<div class="blog-post">
 			<h2><?php the_title(); ?></h2>
 			<div class="blog-post-wrap">
-				<iframe width="100%" height="315" src="//www.youtube.com/embed/YYchaxR_QXE" frameborder="0" allowfullscreen></iframe>
 				<?php the_content(); ?>
 				<div class="meta-bar">
 					<p class="share-this">Share This:</p>
@@ -28,8 +31,8 @@ Template Name: Blog Page
 				</div>
 			</div>
 		</div>
-		    <?php endwhile; endif; ?>
-	</div>
-	<?php include 'sidebar.php'; ?>
+	<?php endwhile; ?>
+</div>
+<?php include 'sidebar.php'; ?>
 </div>
 <?php get_footer(); ?>
