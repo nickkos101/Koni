@@ -61,28 +61,18 @@
         <div class="channels-module">
             <h4>KoniTV Channels</h4>
             <ul>
+                <?php
+                $sliderPosts = new WP_Query();
+                $sliderPosts->query(array('post_type' => 'partners'));
+                while ($sliderPosts->have_posts()) : $sliderPosts->the_post();
+                ?>
                 <li>
-                    <img>
-                    <p>Designers & Architects</p>
+                    <?php autoc_get_img('partnerimage') ?>
+                    <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                 </li>
-                <li>
-                    <img>
-                    <p>Designers & Architects</p>
-                </li>
-                <li>
-                    <img>
-                    <p>Designers & Architects</p>
-                </li>
-                <li>
-                    <img>
-                    <p>Designers & Architects</p>
-                </li>
-                <li>
-                    <img>
-                    <p>Designers & Architects</p>
-                </li>
-            </ul>
-        </div>
+            <?php endwhile; ?>
+        </ul>
+    </div>
 
     </div>
 

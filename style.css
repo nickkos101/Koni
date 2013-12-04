@@ -55,6 +55,15 @@ textarea {
 	resize:none;
 }
 
+button {
+	border:none;
+	background-color:#9d6d4e;
+	color:#fff;
+	padding:10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
 .container {
 	width:1000px;
 	margin-left:auto;
@@ -331,6 +340,7 @@ textarea {
 	text-align: center;
 	padding-top:5px;
 	padding-bottom:5px;
+	height:200px;
 }
 
 .channels-module ul li p {
@@ -346,6 +356,20 @@ textarea {
 	padding-bottom: 17px;
 	padding-left: 17px;
 	padding-right: 17px;
+}
+
+.blog-wrap .channels-module ul li {
+	max-width:155px;
+}
+
+.product .wp-post-image {
+	height:160px;
+	width:auto;
+}
+
+.wp-post-image {
+	width:100%;
+	height:auto;
 }
 
 /* Blog */
@@ -397,6 +421,18 @@ textarea {
 	background-color: #9d6d4e;
 }
 
+.meta-bar button {
+	background-color:#fff;
+	margin-top:-8px;
+	color:#9d6d4e;
+}
+
+.meta-bar button img {
+	max-height: 13px;
+	vertical-align: middle;
+	padding-right:10px;
+}
+
 .meta-bar .socialmedia {
 	padding-top:0px;
 	float:none;
@@ -414,6 +450,10 @@ textarea {
 .read-more {
 	float:right;
 	margin-top:5px;
+}
+
+.read-more label {
+	padding-right:60px;
 }
 
 .read-more a {
@@ -472,6 +512,145 @@ textarea {
 .channel-video iframe {
 	min-height:398px;
 }
+
+/* Sales Page */
+
+.fullwidth {
+	width: 100% !important;
+}
+
+.price-tables {
+	width: 100%;
+	float: left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.price-table {
+	width:280px;
+	text-align: center;
+	float: left;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.value {
+	color:rgb(211, 85, 85);
+	font-weight: bold;
+	font-size:22px !important;
+}
+
+.price-table ul {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.price-table ul li {
+	padding:10px;
+	background-color: #f5f5f5;
+	border:1px solid #e7e7e7;
+	border-bottom:none;
+	list-style-image: url('images/check.png');
+	list-style-position: inside;
+	text-indent: -24px;
+	padding-left: 3em;
+
+}
+
+.price-table ul li:last-of-type {
+	border-bottom:1px solid #e7e7e7;
+}
+
+.price strong {
+	position: relative;
+	font-size:28px;
+	color:#505050;
+	top:-30px;
+}
+
+.price sup {
+	position: relative;
+	margin-left:20px;
+	top: -24px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.exact_price {
+	font-size:75px;
+	color:#505050;
+	letter-spacing:-3px;
+}
+
+.time {
+	color: #888;
+	margin-left:-18px;
+}
+
+.price-table button {
+	border:none;
+	background-color:#9d6d4e;
+	color:#fff;
+	margin-top:10px;
+	padding:15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.partnership {
+	font-size:35px !important;
+	letter-spacing: 0px;
+	color:#505050;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1em !important;
+	margin-top:0px;
+}
+
+.whitespace {
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-box-shadow: 4px 6px 8px rgba(50, 50, 50, 0.08);
+	-moz-box-shadow:    4px 6px 8px rgba(50, 50, 50, 0.08);
+	box-shadow:         4px 6px 8px rgba(50, 50, 50, 0.08);
+}
+
+
+/* Product */
+
+.product {
+	width:220px;
+	margin-left:10px;
+	margin-right: 10px;
+	text-align: center;
+	float: left;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.product h2 {
+	font-size:18px;
+}
+
+.product .whitespace {
+	padding-top: 0px;
+}
+
+.product img {
+	max-width:220px;
+	max-height:200px;
+}
+
+.product-info {
+	text-align: left;
+	padding:5px;
+}
+
 
 /* Footer */
 

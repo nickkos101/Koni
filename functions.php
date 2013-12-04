@@ -22,6 +22,17 @@ register_sidebar( array(
 	) 
 );
 
+//Customized Exerpt
+function custom_excerpt_length( $length ) {
+	return 18;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 //Post Type Creation
 
 function koni_create_post_type() {
@@ -44,6 +55,17 @@ function koni_create_post_type() {
 		'has_archive' => true,
 		'rewrite' => array('slug' => 'partners'),
 		'supports' => array('title'),
+		)
+	);
+	register_post_type('products', array(
+		'labels' => array(
+			'name' => __('Products'),
+			'singular_name' => __('product')
+			),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'products'),
+		'supports' => array('thumbnail', 'title', 'editor'),
 		)
 	);
 }
