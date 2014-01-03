@@ -64,6 +64,10 @@ button {
 	font-size: 12px;
 }
 
+.clearfix {
+	padding-bottom:10px;
+}
+
 .container {
 	width:1000px;
 	margin-left:auto;
@@ -674,3 +678,8 @@ button {
 	width:705px;
 	float:left;
 }
+
+.landing-table {
+	float: none;
+	width: auto;
+}  
