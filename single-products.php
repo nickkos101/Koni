@@ -5,11 +5,7 @@
 		<div class="blog-post">
 			<h2><?php the_title(); ?></h2>
 			<div class="blog-post-wrap">
-				<?php 
-				if ( has_post_thumbnail() ) {
-					the_post_thumbnail();
-				}  
-				?>
+				 <iframe width="100%" height="306" src="//www.youtube.com/embed/<?php echo autoc_get_postdata('videolink'); ?>" frameborder="0" allowfullscreen></iframe>
 				<?php the_content(); ?>
 				<div class="meta-bar">
 					<p class="share-this">Share This:</p>
@@ -22,7 +18,7 @@
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/blogger.png"></li>
 					</ul>
 					<div class="read-more">
-						<label>Price: $399.00</label><button><img src="<?php echo get_template_directory_uri(); ?>/images/carticon.png">Buy Now</button>
+						<label>Price: <?php echo autoc_get_postdata('price'); ?></label><button><img src="<?php echo get_template_directory_uri(); ?>/images/carticon.png">Buy Now</button>
 					</div>
 				</div>
 			</div>

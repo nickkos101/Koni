@@ -25,6 +25,6 @@ function theme_options_init() {
  * Load up the menu page
  */
 function theme_options_add_page() {
-	add_menu_page(__('Bonfun Manager', 'sampletheme'), __('Bonfun Options', 'sampletheme'), 'edit_theme_options', 'main_theme_options', 'main_theme_options_do_page', get_template_directory_uri().'/images/favicon.png');
+	add_menu_page(__('Theme Manager', 'sampletheme'), __('Theme Options', 'sampletheme'), 'edit_theme_options', 'main_theme_options', 'main_theme_options_do_page', get_template_directory_uri().'/images/favicon.png');
 }
 ?>

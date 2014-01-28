@@ -38,30 +38,44 @@ Template Name: Landing Page
 		<div class="white-wrap">
 			<div class="content-wrap">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="page-wrap fullwidth">
-						<h2><?php the_title(); ?></h2>
-						<?php the_content(); ?>
-						<iframe width="100%" height="480" src="//www.youtube.com/embed/YYchaxR_QXE" frameborder="0" allowfullscreen></iframe>
-						<div class="price-tables">
-							<div class="price-table landing-table">
-								<h4>Partner Package</h4>
-								<div class="whitespace">
-									<div class="price">
-										<p class="partnership">Become a partner today!</p>
-									</div>
-									<p class="value">$50,000 Value</p>
-									<p><strong>No Setup Fee</strong></p>
-									<ul>
-										<li>Get a short video about your business.</li>
-										<li>We produce a half hour TV segment to be syndicated to your own online TV Station</li>
-										<li>Videos syndicated to KoniTV and associated networks</li>
-										<li>Syndicated video content related to your business</li>
-									</ul>
-									<button>Contact Today</button>
-								</div>
+				<div class="page-wrap fullwidth landing">
+					<h1 class="center lp">Become a partner today</h1>
+					<div class="module">
+						<div style="width:35%;" class="left">
+							<ul>
+								<li>$50,000 value, no setup fees!</li>
+								<li>Get a short video about your business.</li>
+								<li>We produce a half hour TV segment to be syndicated to your own online TV station.</li>
+								<li>Videos syndicated to KoniTV and associated networks.</li>
+								<li>Syndicated video content related to your business.</li>
+							</ul>
+							<button>Join now</button>
+						</div>
+						<div style="width:65%;" class="right">
+							<iframe style="float:right; margin-right:30px; border:none;" width="570" height="315" src="//www.youtube.com/embed/0ogSC6JKkrY?autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div> 
+					</div>
+					<div class="quote">
+						<h2>"KoniTV has dramatically improved my online presence." ~ Somebody</h2>
+					</div>
+					<div class="module">
+						<div class="left" style="width:60%; margin-left:30px;">
+							<h2 style="color:#9d6d4e;">More about KoniTV</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div style="width:30%; margin-right:30px;" class="right spns">
+								<h2 style="color:#9d6d4e;">Proud Sponsors</h2>								
+								<img src="http://localhost/wp-server-nick/koni/wp-content/uploads/sites/12/2014/01/bdny.png">
+								<img src="http://localhost/wp-server-nick/koni/wp-content/uploads/sites/12/2014/01/Bitac.png">
+								<img src="http://localhost/wp-server-nick/koni/wp-content/uploads/sites/12/2014/01/h1.png">
+								<img src="http://localhost/wp-server-nick/koni/wp-content/uploads/sites/12/2014/01/koha.png">
 							</div>
 						</div>
-						<em>Offer only valid in the greater San Diego area.</em>
 					</div>
 				<?php endwhile; endif; ?>
 			</div>

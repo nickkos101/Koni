@@ -15,7 +15,9 @@
     <div class="container">
         <div class="header">
             <div class="left">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" class="logo">
+            <a href="<?php echo get_bloginfo('url'); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" class="logo">
+                </a>
                 <h2>Inspire &#183; Educate &#183; Entertain</h2>
             </div>
             <div class="right">

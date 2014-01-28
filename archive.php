@@ -5,7 +5,12 @@
 		<div class="blog-post">
 			<h2><?php the_title(); ?></h2>
 			<div class="blog-post-wrap">
-				<?php the_content(); ?>
+				<?php 
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail();
+					}  
+					?>
+				<?php the_excerpt(); ?>
 				<div class="meta-bar">
 					<p class="share-this">Share This:</p>
 					<ul class="socialmedia">

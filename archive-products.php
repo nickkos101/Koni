@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="content-wrap">
 	<div class="page-wrap fullwidth">
-		<iframe width="100%" height="480" src="//www.youtube.com/embed/C4JfTmhwTJw" frameborder="0" allowfullscreen></iframe>
+
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div class="product">
 				<h2><?php the_title(); ?></h2>

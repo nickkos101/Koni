@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Meta Box
-Plugin URI: http://www.deluxeblogtips.com/meta-box
+Plugin Name: Autocracy
+Plugin URI: http://businessonmarketst.com
 Description: Create meta box for editing pages in WordPress. Compatible with custom post types since WP 3.0
 Version: 4.2
-Author: Rilwis
-Author URI: http://www.deluxeblogtips.com
-License: GPL2+
+Author: Nick Koskowski
+Author URI: http://businessonmarketst.com
+License: Private License
 */
 
 // Prevent loading this file directly
